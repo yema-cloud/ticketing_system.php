@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NathiSiConnected | Confidential &amp; Anonymous Tip Line</title>
+</head>
+<body>
+
+<div class="header-body">
+    <div class="header-title">
+        <h1>
+            <span class="title-black">Nathi</span>
+            <span class="title-green">SiConnected</span>
+        </h1>
+
+        <a href="login.php" class="login-icon">
+            <i class="fas fa-user user-icon"></i>
+            <span>Log In / Register</span>
+        </a>
+    </div>
+
+    <nav class="navi">
+        <ul>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="RENAME.php">Ward Summaries</a></li>
+            <li><a href="services.php">Services</a></li>
+            <li><a href="contact.php">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="form-body tip-line-body">
+
+   
+
+    <h1 style="text-align:left; margin-bottom:5px;">Anonymous &amp; Confidential Report</h1>
+    <p style="text-align:left; max-width:none; padding:0; margin:0 0 10px; font-size:13px; color:#666;">
+        Your personal details, IP address, and location history are NOT recorded.
+    </p>
+
+    <div class="safety-notice">
+        <strong>Emergency Warning:</strong> If you or someone else is in immediate danger, please call emergency service lines (e.g., 10111 or 112) immediately. Do not wait for an online report response.
+    </div>
+
+   
+    <form id="reportForm" method="POST" action="">
+
+        
+        <div style="position:absolute; left:-9999px;" aria-hidden="true">
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="form-group">
+            <label for="incident_type">Type of Incident</label>
+            <select id="incident_type" name="incident_type" required>
+                <option value="">-- Select Incident Category --</option>
+                <option value="Domestic Violence / Abuse">Domestic Violence / Abuse</option>
+                <option value="Child Abuse or Neglect">Child Abuse or Neglect</option>
+                <option value="Gender-Based Violence (GBV)">Gender-Based Violence (GBV)</option>
+                <option value="Theft / Burglary / Crime">Theft / Burglary / Crime</option>
+                <option value="Corruption / Fraud">Corruption / Fraud</option>
+                <option value="Other Safety Threat">Other Safety Threat</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="urgency">Urgency Level</label>
+            <select id="urgency" name="urgency">
+                <option value="Medium">Standard / Non-Immediate</option>
+                <option value="High">High Urgency</option>
+                <option value="Critical">Critical / Active Threat</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="location">Location / Area of Incident</label>
+            <input type="text" id="location" name="location" placeholder="e.g., Street name, neighborhood, or landmark" required>
+        </div>
+
+        <div class="form-group align-top">
+            <label for="description">Detailed Description</label>
+            <textarea id="description" name="description" rows="6" maxlength="1000" placeholder="Describe what happened or what you observed. Do not include your own name or phone number if you wish to remain anonymous." required></textarea>
+        </div>
+
+        <div class="form-buttons">
+            <button type="submit" class="btn-danger">Submit Confidential Report</button>
+        </div>
+    </form>
+
+   
+
+</div>
+<footer>
+    <section>
+        <p> <b> Platform </b> </p>
+        <p> <a href="about.php"> About us </a> </p>
+        <p> <a href="RENAME.php"> Wards </a> </p>
+        <p> <a href="services.php"> Services </a> </p>
+        <p> <a href="faq.php"> Frequently Asked Questions </a> </p>
+
+
+    </section>
+
+    <section>
+        <p> <b> Contact </b> </p>
+        <p> <i class='fas fa-phone-alt' style='font-size:20px'></i> +27 46 603 6131 </p>
+        <p> <i class='fas fa-envelope-square' style='font-size:20px'></i> <a href="nathisiconnected@gmail.com">
+                nathisiconnected@gmail.com </a> </p>
+        <p> <i class='fas fa-map-marker-alt' style='font-size:20px'></i> 1921 High Street Makhanda </p>
+        <p> <i class='fas fa-shield-alt' style='font-size:20px'></i> <a href="anonymous_report.html"> Report Anonymously
+            </a> </p>
+        <!-- <p> <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a> </p> -->
+    </section>
+
+    <section>
+        <p> <b> Operating Hours </b> </p>
+        <p> Monday to Friday: 8:00 - 16:30 </p>
+        <p> Saturday & Sunday : 9:00 - 16:30 </p>
+
+
+    </section>
+
+</footer>
+
+</body>
+</html>
